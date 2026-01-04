@@ -6,14 +6,14 @@ import {
   updateNote,
 } from '../controllers/noteController.js';
 
-const router = express.Router();
+const notesRouter = express.Router();
 
-router.get('/', getAllNotes);
+notesRouter.get('/', getAllNotes);
 
-router.post('/', createNote);
+notesRouter.post('/', createNote);
 
-router.put('/:id', updateNote);
+notesRouter.put('/:id', updateNote);
 
-router.delete('/:id', deleteNote);
+notesRouter.delete('/:id', deleteNote);
 
-export default router;
+export default notesRouter;
